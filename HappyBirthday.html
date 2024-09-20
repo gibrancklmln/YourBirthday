@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY_BIRTHDAY_CANTIK</title>
+    <style>
+
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/026/878/953/small_2x/happy-birthday-background-with-copy-space-ai-generative-photo.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+    }
+
+
+         .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin: 0 10px;
+        }
+        h1{
+            font-size:30px;
+            color:rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1><center>HAPPY BIRTHDAY</center></h1> <br>
+    <div class="text-center">
+        <center><img src="cute-happy-birthday-dancing-kawaii-panda-sticker-n7o57h7etuqg6swc.gif" class="rounded" alt="Happy Birthday GIF" height="200" width="200"></center>
+    </div>  
+    <p><center>KLICK BROWW</center></p>
+
+    <div class="button-container" id="button-container">
+        <button onclick="handleYesClick()">Yes</button>
+        <button id="noButton" onclick="handleNoClick()">No</button>
+    </div>
+
+    <script>
+        function handleYesClick() {
+            alert('good girl')
+    window.location.href = "file:///C:/Users/MyBook%20Hype/Documents/ULTAH/halaman-baru.html";
+}
+
+
+
+
+            
+
+
+            
+        
+
+        function handleNoClick() {
+            alert('Jangan klick ini lahhh');
+            moveNoButton();
+            
+        }
+        
+
+        function moveNoButton() {
+            var buttonContainer = document.getElementById('button-container');
+            var noButton = document.getElementById('noButton');
+            var randomX = Math.floor(Math.random() * (window.innerWidth - 100)); 
+            var randomY = Math.floor(Math.random() * (window.innerHeight - 50)); 
+            noButton.style.position = 'absolute';
+            noButton.style.left = randomX + 'px';
+            noButton.style.top = randomY + 'px';
+        }
+    </script>
+</body>
+</html>

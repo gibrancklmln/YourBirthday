@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+.button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin: 0 10px;
+        }
+    h1{
+        font size:40;
+        color:black:
+    }
+    
+  
+    p{
+        font-size:25;
+        color: black;
+    }
+
+    h2{
+        font-size:100;
+        color: black;
+    }
+   </style> 
+</head>
+<body>
+      <h1><center>SELAMAT CANTIKKKK TOLONG DI BACA YAAAAA</center></h1> 
+      <P><center>happy birthday cantik, semoga panjang umur,sukses selalu, dan juga menjadi calon pasangan hidup yang sholehah buat akuuu wkwk,
+        oiya aku mau nepatin janji aku waktu aku bilang di call pas kamu beres rapat, aku mau bilang kalo aku mau selamanya sama kamu, dan aku harap kamu juga, maaf kalo selama ini aku berlebihan sama kamu,atau mungkin kamu anggap obses,
+        aku bukan obses atau berlebihan, emang belum waktunya buat serius, tapi apa salahnya kalo kita belajar untuk saling kasih percaya?? dan aku kaya gini
+        bukan tanpa alasan, aku kaya gini karna sayang sama kamu,kamu bilang aku selalu mikir negatif karna itu salah aku, kamu ga sadar?? kamu yg bikin aku kaya gini,
+        aku gamau kamu pergi karna udh nyimpen luka di aku, aku gamau selalu kaya gitu nasib aku, plis gaada salahnya kok kamu bales kebaikan aku selama ini, ayo saling kasih feedback, unget janji kita duku zia,
+        kalo kita bakal sama sama terus, kalo ada apa apa saling kasih tau, kalo sibuk juga wajib ngabarin,aku mau kita kaya dulu lagi,aku kangen kamu pas awal awal di bandung
+        aku suka kalo d cariin kamu,aku suka id khawatirin kamu,aku suka semua itu zia, aku mau ngerasain itu lagiiiii, aku mau kamu,selamanya,SELAMANYA ZIAAAAA!!!!</center></P>
+        <h2><center>KAMUUUUU YANG AKU MAU ZIAAAAA, ALWAYSSSSSS!!!!!!!!</center></h2>
+        <div class="text-center">
+            <center><img src="collage.jpg" class="rounded" alt="foto me n you" height="400" width="500"></center>
+        </div>  
+
+        <div class="button-container" id="button-container">
+            <button onclick="handleYesClick()">Yes</button>
+            <button id="noButton" onclick="handleNoClick()">No</button>
+        </div>
+    
+        <script>
+            function handleYesClick() {
+                alert('good girl BANGETTT')
+        window.location.href = "file:///C:/Users/MyBook%20Hype/Documents/ULTAH/halaman-baru3.html";
+    }
+    
+    
+    
+    
+                
+    
+    
+                
+            
+    
+            function handleNoClick() {
+                alert('Jangan klick ini lahhh');
+                moveNoButton();
+                
+            }
+            
+    
+            function moveNoButton() {
+                var buttonContainer = document.getElementById('button-container');
+                var noButton = document.getElementById('noButton');
+                var randomX = Math.floor(Math.random() * (window.innerWidth - 100)); 
+                var randomY = Math.floor(Math.random() * (window.innerHeight - 50)); 
+                noButton.style.position = 'absolute';
+                noButton.style.left = randomX + 'px';
+                noButton.style.top = randomY + 'px';
+            }
+            </script>
+</body>
+</html>
